@@ -13,7 +13,7 @@ class TestClass:
     def test_add_book_favorite_len(self, book_with_favorite):
         book_with_favorite.add_book_to_favorite(data.BOOK_TITLE)
         favorite = book.get_favorite_books()
-        assert len(favorite) > 1
+        assert len(favorite) > 12
 
     @pytest.mark.parametrize(
         'name', 'books_count',
